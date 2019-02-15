@@ -31,9 +31,15 @@ int main()
   
     printf("Write Data : "); 
     message[0].mesg_text = getchar(); 
+  
+    // msgsnd to send message 
+    msgsnd(msgid[0], &message[0], sizeof(message[0]), 0); 
+  
+    // display the message 
+    printf("Data send is : %c \n", message[0].mesg_text); 
 
 
-msgrcv(msgid[1], &message[1], sizeof(message[1]), 1, 0); 
+ msgrcv(msgid[1], &message[1], sizeof(message[1]), 1, 0); 
   
 
     // display the message 
