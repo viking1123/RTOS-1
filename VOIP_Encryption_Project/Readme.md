@@ -35,7 +35,8 @@ Following are steps to implement VOIP call with Encryption
 
 ## **Gaps in Implementation**
 
-Echo is audible when communicating
+Echo is audible when communicating.
+Some delay is observed, probably due to encryption.
 
 ## **Challenges**
 
